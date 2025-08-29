@@ -976,6 +976,7 @@ RUN \
     pesign \
     policycoreutils \
     protobuf-compiler \
+    protobuf-c-compiler \
     protobuf-devel \
     python3-jinja2 \
     python3-virt-firmware \
