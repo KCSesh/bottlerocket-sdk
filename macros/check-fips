@@ -36,7 +36,7 @@ uses_ring() {
   local bin output
   bin="${1:?}"
   output="$("${STRINGS}" "${bin}")"
-  grep -Fq -m1 '/ring' <<<"${output}"
+  grep -Eq -m1 '/ring-[0-9]' <<<"${output}"
 }
 
 uses_aws_lc_rs() {
